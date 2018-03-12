@@ -22,10 +22,6 @@ class DockerRegistry2::Registry
     return doreq "get", url
   end
 
-  def doput(url,payload=nil)
-    return doreq "put", url, payload
-  end
-
   def dodelete(url)
     return doreq "delete", url
   end
